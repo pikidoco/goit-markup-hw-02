@@ -2,7 +2,14 @@
 --text1-font-family:font-family:"Raleway',sans-serif"; 
 --text2-font-family:font-family:"Roboto', sans-serif";
 --title-color:#212121;
+--subtitle-color: #212121;
+--text-hover-color:#2196F3;
+--text-focus-color:#2196F3;
+--button-color:#212121;
+--button-hover-color:#FFFFFF;
+--paragraph-color:#757575;
 --paragraph:var(--text2-font-family; weight:400px);
+--footer-background-color:#2F303A;
 }
 
 body{font-family: var(--text2-font-family);
@@ -12,17 +19,19 @@ font-weight: bold;
 
 .global-header,.button, h3 {
     font-weight: bold;
-    background-color: #2196F3;
 }
 
 ul {list-style-type: none;}
 a {text-decoration: none;}
+button{
+    font-family: inherit;
+}
 
 /*logo*/
 
 .first-word {color: #2196F3;
     font-size: 26px;
-     font-weight: 700;}
+    font-weight: 700;}
 
 .second-word {color: #000000;
     font-size: 26px;
@@ -48,9 +57,9 @@ a {text-decoration: none;}
 .nav-link :current{
     color: #2196F3;
 }
-a:hover { color: #2196F3;
+a :hover,:focus { color: #2196F3;
 }
-.nav-contact a {
+.nav-contact, a {
     font-family: var(--text2-font-family);
     font-size: 14px;
     font-weight: 500;
@@ -94,12 +103,12 @@ button:hover {
 /*footer section*/
 
 .global-footer{
-    background-color: #2F303A;
+    background-color:var(--footer-background-color);
     font-family: var(--text2-font-family);
     font-weight: 400;
 }
 
-.global-footer a :hover {
+.global-footer a :hover,:focus {
     color: #2196F3;
 }
 address {font-style: normal;}
