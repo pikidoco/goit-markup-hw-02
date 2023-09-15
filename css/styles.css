@@ -12,7 +12,7 @@
     --title-footer-background-color:#2F303A;
     --address-color:#FFFFFF99;
     --background-color-white:#FFFFFF;
-    --title-button-color:#188CE8;
+    --title-button-hover-color:#188CE8;
     }
     
     /*general*/
@@ -99,9 +99,8 @@
         letter-spacing: 0.02em;
         font-weight: bold;
    }
-    .nav-link :current{
-        color:var(--text-hover-focus-color);
-    }
+    .current {color: var(--text-hover-focus-color);}
+    
     a:hover { color:var(--text-hover-focus-color);}
     a:focus { color: var(--text-hover-focus-color);}
 
@@ -177,9 +176,13 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        color: var(--background-color-white);
+        background-color: var(--text-hover-focus-color);
+        width: 200px;
+        height: 50px;
     }
 
-    .title-section button :hover, :focus { color:var(--title-button-color);}
+    .title-section button :hover { color:var(--title-button-hover-color-color);}
 
     .nav-product button {
         font-family: var(--text2-font-family);
@@ -197,6 +200,8 @@
     .button:hover {
         color:var(--button-hover-color);
         background-color: var(--text-hover-focus-color);}
+        
+    .nav-product button :focus {color: var(--text-hover-focus-color);}
    
         /*card section*/
 
